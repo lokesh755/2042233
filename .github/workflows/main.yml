@@ -7,3 +7,6 @@ jobs:
     steps:
       - uses: anthms/my-action@main
       - run: echo "${{ github.action_repository }}"
+      - run: echo "${{ env.VAR }}"
+        env:
+          VAR: ${{ github.action_repository }}
