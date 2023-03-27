@@ -6,3 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: anthms/my-action@main
+      - run: echo "${{ github.action_repository }}"
