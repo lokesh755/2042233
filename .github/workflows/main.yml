@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: anthms/my-action@main
+        env:
+          VARTWO: ${{ github.action_repository }}
       - run: echo "${{ github.action_repository }}"
       - run: echo "${{ env.VAR }}"
         env:
