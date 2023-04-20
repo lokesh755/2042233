@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: lokesh755/my-action/composite@main
       - run: |
-          echo ${{ github.action_repository }}
-          echo ${{ github.action_ref }}
+          echo ${{ github.ref }}
+          echo ${{ github.workflow }}
