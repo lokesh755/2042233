@@ -5,4 +5,4 @@ jobs:
   job-name:
     runs-on: ubuntu-latest
     steps:
-      - uses: anthms/my-action/composite@main
+      - uses: lokesh755/my-action/composite@main
