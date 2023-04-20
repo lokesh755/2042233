@@ -5,6 +5,8 @@ on:
 jobs:
   job-name:
     runs-on: ubuntu-latest
+    env:
+      JobName: JOB
     steps:
       - uses: lokesh755/my-action/composite@main
       - run: |
